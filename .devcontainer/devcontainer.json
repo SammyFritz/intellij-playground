@@ -1,36 +1,21 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/java
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
-	"name": "intellij-playground-dev-container",
+	"name": "Ubuntu",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu"
 
-	"build": {
-		"dockerfile": "Dockerfile"
-	},
-
-	"features": {
-
-		// The latest "java" Dev Container feature releases: https://github.com/devcontainers/features/pkgs/container/features%2Fjava
-		"ghcr.io/devcontainers/features/java:1.1.1": {
-			"version": "17",
-			"installMaven": "false",
-			"installGradle": "false"
-		},
-
-		// The latest "sshd" Dev Container feature releases: https://github.com/devcontainers/features/pkgs/container/features%2Fsshd
-		// The "SSH server (sshd)" feature source code: https://github.com/devcontainers/features/tree/main/src/sshd
-		"ghcr.io/devcontainers/features/sshd:1.0.6": {
-		}
-	}
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "java -version",
+	// "postCreateCommand": "uname -a",
 
 	// Configure tool-specific properties.
-	// "customizations": {
-	// }
+	// "customizations": {},
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
